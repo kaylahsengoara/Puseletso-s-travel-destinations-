@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Lesotho Explorer</title>
+<style>
+body{
+  margin:;
+  font-family:Arial,sans-serif;
+  background:Url('backround.jpg')
+  no repeat Center center fixed;
+  background-size:cover;
+  color:white;
+}
+Nav{
+  background-color:rgba(0,51,102,0.9);
+  padding:10px0;
+}
+Nav ul{
+  list-:none;
+  margin:0;
+  display:flex;
+  justify-content:center;
+}
+Nav ul lia{
+  margin:0 20px;
+}
+nav ul lia{
+  color:color;
+  text-decoration:none;
+  padding:10px 15px;
+  font-weight:bold;
+  Transition:background 0.3s,color 0.3s,
+}
+Nav ul lia:hover{
+  background-color:Green;
+  color:#093366;
+  border-radius:5px;
+}
+header{
+  text-align:center;
+  padding:80px 20px;
+  background-color:rgba(0,0,0,0.5);
+}
+.carousel{
+  max-width:900px;
+  margin:40px auto;
+  position:relative;
+}
+.slide{
+  display:none;
+  text-align:center;
+}
+.slide.active{
+  display:block;
+  animation:fade1s ease-in-out;
+}
+.slide img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:08px16px;
+  rgba(0,0,0,0.5);
+  transition:transform o.4s ease,filter 0.3s;
+}
+.slide img:hover{
+  transform:scale(1.03);
+  filter:brightness(1.1);
+}
+.caption{
+  margin-top:10px;
+  font-size1em;
+  background:rgba(0,0,50,0.6);
+  padding:12px;
+  border-radius:8px;
+  display:inline-block;
+}
+@keyFrames fade{
+  from{opacity:0;}
+  to{opacity:1;}
+  </style>
+  </head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Destination.html">Destination </a>
+      </li><a href="About.html">About </a></li>
+    <li><a
+      href="contact.html">CONTACT</a>
+    </ul>
+  </nav>
+  <header>
+    <body>
+      <h1>
+    WELCOME TO LESOTHO TRAVEL EXPLORER
+  </h1>
+      <p>Curated by Puseletso Sengoara-
+        Discover Lesotho's most
+        breathtaking destinations.
+          </p>
+    </header>
+    <section class="carousel">
+      <div class="slide active">
+        <a href="https://.en wikipedia.org
+          /wiki/katse-Dam"target="_blank">
+          <img src="katsedam.jpg">
+        </a>
+        <div class="caption">katse Dam
+          -An engineering wonder in the
+          mountains</div>
+      </div>
+      <div class="slide active">
+        <a href="https://en.wikipedia.org/wiki/Mohal-Dam"
+          target="_blank">
+          <img src="mohaledam.png">
+        </a>
+        <div class="caption">Mohale Dam-A peaceful
+          retreat by the water</div>
+      </div>
+      <div class="slide active">
+        <a href="#"target="_blank">
+          <img src="Thabatseka.jpg">
+        </a>
+        <div class="caption">Thaba-Tseka-Explore the
+          heart of Lesotho'highlands</div>
+      </div>
+      <div class="slide active">
+        <a href="https://en.wikipedia.org
+          /wiki/Liphofung-Historical-site"
+          target="_blank">
+          <img src="Liphofung.png"></a>
+        <div class="caption">Liphofung-History and culture
+          in ancient caves
+        </div>
+      </div>
+    </section>
+    <script>
+    let current=0;
+    const slides=document.querysel
+    ectorAII('.slide');
+    setinterval(()= >{
+      slides[current].classlist.remove(
+      'active');
+      current=(current +1)%
+      slides.length;
+      slides[current].classlist.add('active');
+    },4000);
+    </script>
+    </body>
+</html>
